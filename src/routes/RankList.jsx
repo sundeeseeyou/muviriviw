@@ -4,7 +4,12 @@ export default function RankList() {
   return (
     <>
       <Outlet />
-      <RankPoster />
+      <RankPoster title={"indonesia"} description={"haleluya"} rating={"5"} />
+      <RankPoster title={"indonesia"} description={"haleluya"} rating={"5"} />
+      <RankPoster title={"indonesia"} description={"haleluya"} rating={"5"} />
+      <RankPoster title={"indonesia"} description={"haleluya"} rating={"5"} />
+      <RankPoster title={"indonesia"} description={"haleluya"} rating={"5"} />
+      <RankPoster title={"indonesia"} description={"haleluya"} rating={"5"} />
     </>
   );
 }

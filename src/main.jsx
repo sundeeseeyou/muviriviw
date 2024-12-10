@@ -5,8 +5,8 @@ import { ThemeProvider } from "@material-tailwind/react";
 import RootLayout from "./routes/RootLayout";
 import PostList from "./routes/PostList";
 import NewPost from "./routes/NewPost";
-import "./index.css";
 import RankList from "./routes/RankList";
+import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,10 +14,14 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <PostList />,
+        element: (
+          <>
+            <PostList />
+            <RankList />
+          </>
+        ),
         children: [{ path: "/new", element: <NewPost />, children: [] }],
       },
-      { path: "/", element: <RankList />, children: [] },
     ],
   },
 ]);
