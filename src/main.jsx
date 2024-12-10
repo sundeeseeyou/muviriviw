@@ -6,6 +6,7 @@ import RootLayout from "./routes/RootLayout";
 import PostList from "./routes/PostList";
 import NewPost from "./routes/NewPost";
 import "./index.css";
+import RankList from "./routes/RankList";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
         element: <PostList />,
         children: [{ path: "/new", element: <NewPost />, children: [] }],
       },
+      { path: "/", element: <RankList />, children: [] },
     ],
   },
 ]);
