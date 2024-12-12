@@ -1,18 +1,18 @@
 import HeadingText from "../components/HeadingText";
 import Poster from "../components/Poster";
 import { Outlet } from "react-router";
+import movie from "../data";
 
 export default function PostList() {
   return (
     <>
       <Outlet />
       <section id="movie-list" className="py-10">
-        <HeadingText headingText={"Recent Reviewed Movies"} />
+        <HeadingText text={"Recent Reviewed Movies"} />
         <section className="flex justify-around gap-4 py-8 h-4/5">
-          <Poster title={"Film No 1"} rating={"⭐⭐⭐⭐"} />
-          <Poster title={"Film No 2"} rating={"⭐⭐⭐"} />
-          <Poster title={"Film No 3"} rating={"⭐⭐⭐⭐"} />
-          <Poster title={"Film No 4"} rating={"⭐⭐⭐⭐⭐"} />
+          {movie.map((x) => (
+            <Poster title={x.title} rating={x.rating} />
+          ))}
         </section>
       </section>
     </>
