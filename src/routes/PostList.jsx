@@ -10,9 +10,12 @@ export default function PostList() {
       <section id="movie-list" className="py-10">
         <HeadingText text={"Recent Reviewed Movies"} />
         <section className="flex justify-around gap-4 py-8 h-4/5">
-          {movie.map((x) => (
-            <Poster title={x.title} rating={x.rating} />
-          ))}
+          {movie
+            .slice(-4)
+            .reverse()
+            .map((x) => (
+              <Poster title={x.title} rating={x.rating} />
+            ))}
         </section>
       </section>
     </>
