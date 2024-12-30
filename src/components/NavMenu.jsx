@@ -9,11 +9,7 @@ export default function NavMenu() {
         <a href="/review">Review</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
-        <Button
-          variant="gradient"
-          size="lg"
-          className="flex items-center gap-2 px-12 py-4 bg-cyan-900"
-        >
+        <Button className="text-white bg-primaryColor px-12 py-4 shadow-sm">
           <Link to={".."} target="blank">
             Login
           </Link>

@@ -6,7 +6,7 @@ export default function RankList() {
   return (
     <>
       <Outlet />
-      <section id="rank-list" className="flex flex-col gap-8 h-full py-8 px-8">
+      <section id="rank-list" className="flex flex-col gap-8 h-full py-4 px-4">
         <HeadingText text={"Top 10 Rank movie by score"} />
         {movie.map((x) => (
           <RankPoster

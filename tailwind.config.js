@@ -7,6 +7,9 @@ module.exports = withMT({
   theme: {
     extend: {
       colors: {
+        myBlue: {
+          50: "#51adcf",
+        },
         primaryColor: "#0C1E4B",
         subColor: "#FFD600",
         textColor: "#2e2e2e",
