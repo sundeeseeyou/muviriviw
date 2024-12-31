@@ -14,7 +14,10 @@ export default function RankPoster({
         <div className="flex flex-col p-4 justify-start w-full h-5/6 gap-2">
           <div className="flex flex-row justify-between">
             <h3 className="text-textColor text-2xl py-2 font-bold">{title}</h3>
-            <p className="py-3">Score: ⭐⭐⭐⭐⭐</p>
+
+            <p className="text-yellow-600 font-bold">
+              {rating} <span className="text-black font-bold ">/ 10</span>
+            </p>
           </div>
           <p className="text-xs text-textColor">{description}</p>
         </div>
