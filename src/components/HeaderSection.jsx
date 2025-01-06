@@ -1,14 +1,14 @@
 import NavMenu from "./NavMenu";
-import { RiMovie2Fill } from "react-icons/ri";
+import { Link } from "react-router";
+import logo from "../assets/img/logo.png";
 
 export default function HeaderSection() {
   return (
     <>
       <header className="flex justify-between h-[10vh] w-full bg-white py-5 items-center sticky">
-        <span className="text-4xl text-primaryColor">
-          <RiMovie2Fill className="inline" />
-          muviriviw
-        </span>
+        <Link to={"/"}>
+          <img src={logo} className="w-48 h-auto" />
+        </Link>
         <NavMenu />
       </header>
     </>
