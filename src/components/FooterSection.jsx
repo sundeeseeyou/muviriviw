@@ -3,8 +3,8 @@ import { Link } from "react-router";
 export default function FooterSection() {
   return (
     <>
-      <footer className="flex flex-row py-4 mt-10 border-t-2 justify-center">
-        <p className="text-xs">
+      <footer className="flex flex-row bottom-0 py-4 justify-center items-center w-11/12 absolute">
+        <p className="text-sm">
           Coded with ☕ by{" "}
           <Link
             className="text-primaryColor font-bold hover:opacity-70"

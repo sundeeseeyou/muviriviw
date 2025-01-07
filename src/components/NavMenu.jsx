@@ -10,9 +10,7 @@ export default function NavMenu() {
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
         <Button className="text-white bg-primaryColor px-12 py-4 shadow-sm">
-          <Link to={"/login"} target="blank">
-            Login
-          </Link>
+          <Link to={"/login"}>Login</Link>
         </Button>
       </nav>
     </>

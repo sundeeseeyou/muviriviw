@@ -14,7 +14,7 @@ export default function PostList() {
             .slice(-4)
             .reverse()
             .map((x) => (
-              <Poster title={x.title} rating={x.rating} />
+              <Poster key={x.id} title={x.title} rating={x.rating} />
             ))}
         </section>
       </section>

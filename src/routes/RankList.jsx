@@ -10,6 +10,7 @@ export default function RankList() {
         <HeadingText text={"Top 10 Rank movie by score"} />
         {movie.map((x) => (
           <RankPoster
+            key={x.id}
             movieId={x.id}
             title={x.title}
             description={x.desc}

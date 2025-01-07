@@ -15,12 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: (
-          <>
-            <PostList />
-            <RankList />
-          </>
-        ),
+        element: <PostList />,
         children: [
           {
             path: "login",
@@ -30,11 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "create",
-        element: (
-          <>
-            <BlogForm />
-          </>
-        ),
+        element: <BlogForm />,
         children: [],
       },
     ],
