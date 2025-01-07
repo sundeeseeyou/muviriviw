@@ -5,8 +5,9 @@ import { ThemeProvider } from "@material-tailwind/react";
 import RootLayout from "./routes/RootLayout";
 import PostList from "./routes/PostList";
 import RankList from "./routes/RankList";
-import "./index.css";
 import BlogForm from "./routes/BlogForm";
+import Login from "./routes/Login";
+import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,19 +21,15 @@ const router = createBrowserRouter([
             <RankList />
           </>
         ),
-        children: [],
+        children: [
+          {
+            path: "login",
+            element: <Login />,
+          },
+        ],
       },
       {
         path: "create",
-        element: (
-          <>
-            <BlogForm />
-          </>
-        ),
-        children: [],
-      },
-      {
-        path: "/movie:id",
         element: (
           <>
             <BlogForm />
@@ -51,5 +48,3 @@ createRoot(document.getElementById("root")).render(
     </ThemeProvider>
   </React.StrictMode>
 );
-
-lkjlkjlk;
