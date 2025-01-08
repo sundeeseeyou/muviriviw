@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Form } from "react-router-dom";
 import { useState } from "react";
 import {
   Button,
   Dialog,
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
   Typography,
@@ -20,8 +19,7 @@ export default function NavMenu() {
   return (
     <>
       <nav className="flex flex-row items-center text-md text-primaryColor space-x-16 font-bold">
-        <Link to="/menu">Home</Link>
-        <Link to="/review">Review</Link>
+        <Link to="/top-10">Top 10 Ranks</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
         <Button
@@ -31,6 +29,7 @@ export default function NavMenu() {
           Login
         </Button>
       </nav>
+
       <Dialog
         size="xs"
         open={open}
@@ -52,26 +51,19 @@ export default function NavMenu() {
             <Typography className="-mb-2" variant="h6">
               Username
             </Typography>
-            <Input label="Username" size="lg" />
+            <Input label="Username" size="md" required />
             <Typography className="-mb-2" variant="h6">
               Password
             </Typography>
-            <Input label="Password" size="lg" />
+            <Input label="Password" size="md" required />
             <div className="-ml-2.5 -mt-3">
               <Checkbox label="Remember Me" />
             </div>
           </CardBody>
           <CardFooter className="pt-0">
-            <Link to="/post">
-              <Button
-                to="/post"
-                className="bg-primaryColor"
-                onClick={openHandle}
-                fullWidth
-              >
-                Login
-              </Button>
-            </Link>
+            <Button className="bg-primaryColor" onClick={openHandle} fullWidth>
+              Login
+            </Button>
           </CardFooter>
         </Card>
       </Dialog>

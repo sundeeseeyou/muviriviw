@@ -4,7 +4,7 @@ import { Outlet } from "react-router";
 
 export default function RootLayout() {
   return (
-    <main className="w-full px-32">
+    <main className="flex flex-col w-full px-32 min-h-[100dvh]">
       <HeaderSection />
       <Outlet />
       <FooterSection />

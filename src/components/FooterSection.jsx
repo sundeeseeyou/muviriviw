@@ -3,9 +3,9 @@ import { Link } from "react-router";
 export default function FooterSection() {
   return (
     <>
-      <footer className="flex flex-row bottom-0 py-4 justify-center items-center w-11/12 absolute">
-        <p className="text-sm">
-          Coded with ☕ by{" "}
+      <footer className="flex flex-row py-4 justify-center bottom-0 fixed self-center">
+        <p className="text-md">
+          Composed by{" "}
           <Link
             className="text-primaryColor font-bold hover:opacity-70"
             to="https://github.com/sundeeseeyou"
@@ -13,7 +13,7 @@ export default function FooterSection() {
           >
             sundeeseeyou
           </Link>{" "}
-          &copy; {new Date().getFullYear()}
+          while ☕ &copy; {new Date().getFullYear()}
         </p>
       </footer>
     </>

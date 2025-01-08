@@ -6,7 +6,6 @@ import RootLayout from "./routes/RootLayout";
 import PostList from "./routes/PostList";
 import RankList from "./routes/RankList";
 import BlogForm from "./routes/BlogForm";
-import Login from "./routes/Login";
 import "./index.css";
 const router = createBrowserRouter([
   {
@@ -16,12 +15,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <PostList />,
-        children: [
-          {
-            path: "login",
-            element: <Login />,
-          },
-        ],
+        children: [],
       },
       {
         path: "create",
