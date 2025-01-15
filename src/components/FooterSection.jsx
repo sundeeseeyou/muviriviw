@@ -3,7 +3,7 @@ import { Link } from "react-router";
 export default function FooterSection() {
   return (
     <>
-      <footer className="flex flex-row py-4 justify-center bottom-0 fixed self-center">
+      <footer className="flex flex-row py-4 justify-center bottom-0 absolute self-center">
         <p className="text-md">
           Composed by{" "}
           <Link
