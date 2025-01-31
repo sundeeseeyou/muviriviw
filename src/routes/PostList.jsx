@@ -7,9 +7,9 @@ export default function PostList() {
   return (
     <>
       <Outlet />
-      <section id="movie-list" className="py-10">
+      <section id="movie-list" className="flex flex-col items-center py-10">
         <HeadingText text={"Recent Reviewed Movies"} />
-        <section className="flex justify-around gap-4 py-8 h-4/5">
+        <section className="flex justify-around self-stretch gap-4 py-8 h-4/5">
           {movie
             .slice(-4)
             .reverse()
